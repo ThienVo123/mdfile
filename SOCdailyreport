@@ -1,0 +1,67 @@
+# 🛡️ SOC Daily Report – Ngày 2025-08-04
+
+## 👨‍💻 Người thực hiện
+- Tên: Nguyễn Văn A
+- Vị trí: Security Analyst Level 2
+- Ca trực: 08:00–17:00 (GMT+7)
+
+---
+
+## 📈 Tổng quan hoạt động
+
+| Loại dữ liệu | Số lượng |
+|-------------|----------|
+| Tổng số alert nhận được | 146 |
+| Alert mức Critical | 3 |
+| Alert mức High | 12 |
+| Alert mức Medium | 41 |
+| Alert mức Low | 90 |
+
+---
+
+## 🚨 Alert nổi bật trong ngày
+
+### 1. **Brute-force Attack on Azure VM (vm-payroll-01)**
+- **Thời gian:** 04:15 – 04:21
+- **Nguồn IP:** `146.70.120.33` (Blacklisted)
+- **Tác động:** 146 lần kết nối RDP không hợp lệ
+- **Trạng thái:** Đã block IP qua NSG. Chưa xác định user bị lộ.
+
+### 2. **Suspicious PowerShell Script Execution**
+- **Máy bị ảnh hưởng:** `IT-Helpdesk-07`
+- **Script:** Obfuscated PowerShell chạy từ `%AppData%\Temp`
+- **Phản ứng:** Isolate máy khỏi mạng, log gửi sang DFIR để phân tích thêm
+
+---
+
+## 🔍 Hoạt động giám sát / điều tra
+
+- [x] Xác minh alert failed logon trên `HR-DB-SQL01`  
+- [x] Theo dõi kết nối bất thường đến `port 445` nội bộ  
+- [ ] Cập nhật IOC mới từ MISP feed  
+- [ ] Xác minh cảnh báo `DNS Tunneling` từ hệ thống Suricata
+
+---
+
+## 🛠️ Đề xuất hành động
+
+- **Khẩn cấp:** Rà soát user dùng RDP nhưng chưa bật MFA trên Azure  
+- **Trung hạn:** Triển khai baseline alert cho script execution bất thường  
+- **Tài liệu hóa:** Cập nhật danh sách IP tấn công trong blocklist toàn công ty
+
+---
+
+## 🗂️ File đính kèm
+
+- [Log mẫu Brute-force - JSON](./logs/brute_rdp_vm01.json)
+- [Bằng chứng ảnh chụp màn hình](./evidence/rdp_failures.png)
+
+---
+
+## 📬 Ghi chú cuối ca
+
+> Tình hình chung ổn định. Tăng nhẹ về số lượng brute-force từ các IP Đông Âu. Không phát hiện lây nhiễm nội bộ.
+
+---
+
+*Báo cáo được tạo tự động kết hợp từ hệ thống SIEM và tổng hợp thủ công bởi SOC Analyst.*
