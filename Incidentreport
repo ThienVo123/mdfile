@@ -1,0 +1,94 @@
+# 🛡️ Infosec Security Incident Report
+
+> **Confidential**
+
+---
+
+## 📌 Incident Title
+*Điền tiêu đề tại đây*
+
+## 🗺️ Physical Location of Incident
+- **Country:**  
+- **Office location:**  
+
+## 🕒 Date and Time of Incident
+- **Date:**  
+- **Time:**  
+
+## 📣 Reported By
+- **Name:**  
+- **Role / Title:**  
+
+## 📩 Reported To
+- **Name:**  
+- **Role / Title:**  
+
+## 👤 Affected Business Unit / User
+- **Name:**  
+- **Role / Title:**  
+- **Email:**  
+- **Other info:**  
+
+---
+
+## 🚨 Type of Incident
+- [ ] Unauthorized Access  
+- [ ] Insider Threats  
+- [ ] Malware & Ransomware  
+- [ ] Policy and Control Violations  
+- [ ] Phishing and Social Engineering  
+- [ ] Web and Application Attacks  
+- [ ] Data Breaches and Exfiltration  
+- [ ] Exploits and Vulnerability Attacks  
+- [ ] Denial of Service (DoS/DDoS)  
+- [ ] Identity and Access Compromise  
+- [ ] Misconfigurations  
+- [ ] Others: _________  
+
+---
+
+## 💻 Affected System / Application
+*Điền tên hệ thống hoặc ứng dụng tại đây*
+
+---
+
+## 🧠 Initial Analysis (Identify)
+*Mô tả ngắn về những gì đã xảy ra, phát hiện ban đầu*
+
+## 📊 Impact Assessment
+*Mức độ ảnh hưởng, đối tượng bị tác động, loại dữ liệu*
+
+## 🛡️ Containment and Mitigation (Detect & Protect)
+*Các hành động khẩn cấp để giới hạn sự cố*
+
+## 🔧 Resolution and Recovery (Respond & Recover)
+*Khôi phục dịch vụ, xử lý root cause*
+
+---
+
+## 📢 Communication
+- [ ] Internal Team notified  
+- [ ] External Parties notified  
+
+## 📝 Details
+*Thêm mô tả chi tiết hoặc timeline*
+
+---
+
+## 📚 Post-Incident Review
+
+### 🕳️ Gaps Identified in Control or Process
+*Nêu rõ các lỗ hổng đã phát hiện*
+
+### 💡 Recommendation
+*Đề xuất cải thiện*
+
+### 🛠️ Planned Preventive Actions
+*Hành động phòng ngừa tương lai*
+
+---
+
+## 👤 Report Completed By
+- **Name:** Thien VO HOANG  
+- **Role / Title:** Security Operation  
+- **Date of Report:** YYYY-MM-DD
